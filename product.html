@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/template/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/template/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="/template/all.css" />
+    <link rel="stylesheet" href="/template/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="/template/slick-1.8.1/slick/slick-theme.css" />
+
+    <!-- https://www.girlsmonday.com.tw/default //切版參考-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="navbar"></p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-7">
+            <!-- <div class="variable">
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+              <div class="variable-img me-2">
+                <img src="https://fakeimg.pl/755x955/" />
+              </div>
+            </div> -->
+          </div>
+          <div class="col-5">
+            <div class="pdcnt_info">
+              <a class="pc_activity" href="#">時髦入秋 x 早秋新品折100</a>
+              <span class="line1"></span>
+              <div class="pc_title mb-4">V領針織拼接透紗澎袖上衣</div>
+              <div class="pdcnt_info_color mb-3">
+                <div class="d-flex">
+                  <div>
+                    <input
+                      type="radio"
+                      name="color"
+                      data-colorname="黑"
+                      id="black"
+                      value="black"
+                      class="d-none"
+                    />
+                    <label
+                      class="colorBox colorBox_bk me-2"
+                      for="black"
+                    ></label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="color"
+                      data-colorname="白"
+                      id="white"
+                      value="white"
+                      class="d-none"
+                    />
+                    <label
+                      class="colorBox colorBox_wh me-2"
+                      for="white"
+                    ></label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="color"
+                      id="apricot"
+                      value="apricot"
+                      data-colorname="杏"
+                      class="d-none"
+                    />
+                    <label class="colorBox colorBox_ap" for="apricot"></label>
+                  </div>
+                </div>
+                <div>顏色 : <span id="colorPicker"></span></div>
+              </div>
+              <div class="pdcnt_info_size">
+                <div>
+                  <label class="sizeBox text-center" for="F">F</label>
+                </div>
+              </div>
+              <div class="pdcnt_info_price d-flex mb-5">
+                <div class="pdcnt_info_price-origin me-2">NT$ 690</div>
+                <div class="pdcnt_info_price-sale">NT$ 590</div>
+                <div class="pc_num">01030843</div>
+              </div>
+              <a href="#" class="pc_wishlist" id="pc_wishlist">
+                <i class="fa-regular fa-heart"></i>
+                加入收藏
+              </a>
+              <div class="pdcnt_info_number mb-3">
+                <div class="selectwrap">
+                  <label class="pc_select" for="">
+                    <select class="pc_select2 w-100" name="" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="pdcnt_info_btn mb-5">
+                <a class="btn btn_cart" href="#">Add to card</a>
+              </div>
+              <div class="pc_content">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Composition 商品材質
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        商品材質:棉40% 聚酯纖維40% 彈性纖維20% 商品產地:CHINA
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Details 商品描述
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        彈性羅紋針織拼接雪紡紗，穿著舒適親膚
+                        V領微寬鬆正常版型，不限身型皆可穿
+                        小抓褶澎袖設計，搭配百褶透紗布料，營造優雅溫柔氣質
+                        排釦款式，可單穿或當小外套
+                        建議使用浸泡手洗方式清洗，避免烘乾
+                        深淺商品分開清洗，以保有商品之完整度。
+                        【如想看更多的穿搭資訊，可以參考商品頁面最上方的影片唷】
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Size Chart 尺寸說明
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>尺寸(cm)</th>
+                              <th>F</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>肩寬</td>
+                              <td>36-46</td>
+                            </tr>
+                            <tr>
+                              <td>胸寬</td>
+                              <td>40</td>
+                            </tr>
+                            <tr>
+                              <td>臂寬</td>
+                              <td>21</td>
+                            </tr>
+                            <tr>
+                              <td>袖長</td>
+                              <td>59</td>
+                            </tr>
+                            <tr>
+                              <td>袖口寬</td>
+                              <td>6.5-11</td>
+                            </tr>
+                            <tr>
+                              <td>下擺寬</td>
+                              <td>35.5-45</td>
+                            </tr>
+                            <tr>
+                              <td>全長</td>
+                              <td>46</td>
+                            </tr>
+                            <tr>
+                              <td>重量(g)</td>
+                              <td>201</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        Fitting Report 試穿報告
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th></th>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="LookCuter">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div>
+                <div class="LookCuterimg">
+                  <a href="#"><img src="https://fakeimg.pl/755x956/" /></a>
+                </div>
+                <span class="line1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="footer"></p>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0e6a3938f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/template/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="/template/slick-1.8.1/slick/slick.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+  </body>
+
+  <script>
+    $(".variable").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+      ],
+    });
+  </script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 5,
+        },
+      },
+    });
+  </script>
+  <script>
+    $("#navbar").load("navbar.html");
+    $("#footer").load("footer.html");
+  </script>
+  <script>
+    $(function () {
+      $('input[name="color"]').change(function () {
+        let color = $('input[name="color"]:checked').attr("data-colorname");
+        $("#colorPicker").text(color);
+      });
+      $(".colorBox").click(function () {
+        $(".colorBox").removeClass("colorBox_active");
+        $(this).addClass("colorBox_active");
+      });
+    });
+  </script>
+</html>
